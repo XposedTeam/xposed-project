@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-stone-700 tracking-wide;
+}
+
+.btn {
+    @apply bg-stone-700 text-stone-100 shadow rounded-lg py-2 px-8;
+}
+
+:hover.routerBtn {
+    @apply text-blue-700;
+}
+
+/* .router-link-active, .router-link-exact-active {
+	@apply bg-[#DFC79B] shadow rounded-lg;
+} */
+
+.socialIcon {
+    @apply text-xl text-stone-100 hover:text-stone-900;
+}
