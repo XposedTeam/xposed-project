@@ -5,6 +5,8 @@
 				<div data-aos="flip-up" class="grid grid-cols-2">
 					<div class="text-white text-[60px] lg:text-[130px] font-bold uppercase mt-24 md:w-1/2" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Bonushunts</div>
 					<div>
+					<div class="text-white text-[30px] lg:text-[60px] font-bold uppercase mt-24 md:w-1/2" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Under construction. Coming soon...</div>
+					<div>
 						<img src="../assets/xposedlogo2.png" class="w-80 ml-80 mt-8 md:w-1/2" alt="">
 					</div>
 				</div>
