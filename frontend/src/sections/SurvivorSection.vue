@@ -1,13 +1,16 @@
 <template>
     <section class="h-screen main-bg">
 		<div class="h-screen px-5 lg:px-20 py-16 lg:py-28 page-bg">
-			<div class="w-full h-full">
-				<div data-aos="fade" class="grid grid-cols-2">
-					<div class="text-white text-[60px] lg:text-[130px] font-bold uppercase mt-24 md:w-1/2" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Survivor</div>
-					<div>
-						<img src="../assets/xposedlogo2.png" class="w-80 ml-80 mt-8 md:w-1/2" alt="">
+			<div class="w-full h-full checkFade animated">
+				<div class="grid grid-cols-1 md:grid-cols-2 md:px-0">
+					<div class="text-white text-[70px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
+						Survivor
+					</div>
+					<div data-aos="fade">
+						<img src="../assets/xposedlogo2.png" class="w-80 lg:ml-80 mt-8 md:w-1/2" alt="logo">
 					</div>
 				</div>
+				<div class="text-white text-[30px] lg:text-[60px] font-bold uppercase mt-10 md:w-1/2" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Under construction. Coming soon...</div>
 			</div>
 		</div>
 	</section>
