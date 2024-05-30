@@ -1,51 +1,49 @@
 <template>
     <!-- Main section start -->
-	<transition
-	enter-from-class="opacity-0"
-	enter-active-class="transition duration-300">
 	<section class="h-screen bg">
 		<div class="h-screen px-5 lg:px-20 py-16 lg:py-28 page-bg">
-			<div class="w-full h-full">
-				<div class="grid grid-cols-2">
-					<div class="text-white text-[6	0px] lg:text-[130px] font-bold uppercase mt-16 md:w-1/2" data-aos="fade" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Welcome to Xposed Unofficial</div>
+			<div class="w-full h-full checkFade animated">
+				<div class="grid grid-cols-1 md:grid-cols-2 md:px-0">
+					<div class="text-white text-[70px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
+						Welcome to Xposed Unofficial
+					</div>
 					<div data-aos="fade">
-						<img src="../assets/xposedlogo2.png" class="w-80 ml-80 mt-8 md:w-1/2" alt="logo">
+						<img src="../assets/xposedlogo2.png" class="w-80 lg:ml-80 mt-8 md:w-1/2" alt="logo">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	</transition>
 	<!-- About Section -->
 	<section class="h-[1700px] about-bg">
 		<div class="flex gap-8 flex-col md:flex-row items-center">
-            <h1 class="mt-32 ml-32">
-                <img data-aos="zoom-in-right" src="../assets/dice.png" class="min-w-[600px]" alt="">
+            <h1 class="mt-8 md:mt-32 md:ml-32">
+                <img src="../assets/dice.png" class="w-[300px] md:min-w-[600px]" alt="">
             </h1>
-            <p data-aos="zoom-in-left" class="mt-32 text-white text-5xl font-bold mr-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
+            <p class="md:mt-32 text-white px-10 md:px-0 text-3xl md:text-5xl font-bold md:mr-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
                 if you plan to gamble money you can afford to lose, go to roobet.com/xposed
             </p>
         </div>
 		<div class="flex gap-8 flex-col md:flex-row items-center">
 			<div>
-				<p data-aos="zoom-in-right" class="text-white text-5xl font-bold ml-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white px-10 md:px-0 text-3xl mt-8 md:text-5xl font-bold md:ml-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
 					Where High Stakes Meet High Entertainment
 				</p>
-				<p data-aos="zoom-in-right" class="text-white text-lg font-light ml-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white px-10 md:px-0 text-lg font-light md:ml-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum doloribus unde labore, 
 					minus accusamus facere, sapiente necessitatibus mollitia et tenetur velit ut esse corporis ullam tempore asperiores in vitae?
 				</p>
 			</div>
-            <h1 class="mt-10 mr-32">
-                <img data-aos="zoom-in-left" src="../assets/table.png" class="min-w-[600px]" alt="">
+            <h1 class="mt-1 md:mt-8 md:mr-32">
+                <img src="../assets/table.png" class="w-[300px] md:min-w-[600px]" alt="">
             </h1>
         </div>
 		<div class="flex gap-8 flex-col md:flex-row items-center">
-            <h1 class="mt-10 ml-32">
-                <img data-aos="zoom-in-left"  src="../assets/dice.png" class="min-w-[600px]" alt="">
+            <h1 class="mt-6 md:mt-8 md:ml-32">
+                <img src="../assets/dice.png" class="w-[300px] md:min-w-[600px]" alt="">
             </h1>
 			<div>
-				<p data-aos="zoom-in-right" class="text-white text-lg font-light mr-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white text-lg px-10 md:px-0 font-light md:mr-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet, 
 					recusandae ad iste quam hic porro officiis unde accusantium ipsum, ullam, quidem quod. 
 					Fugiat neque non facilis veniam. Quisquam, nisi qui rerum modi asperiores voluptatem sint, 
@@ -57,100 +55,104 @@
 	</section>
 
 	<!-- Leaderboard Section -->
-	<section class="h-[1300px] leaderboard-bg p-32">
-		<div data-aos="zoom-in-down" class="h-[1000px] leaderboard-card rounded-xl mt-10">
-			<img src="../assets/leaderboard.png" alt="image" class="block mx-auto w-[500px] lead-img">
-			<div class="flex flex-row justify-center">
-				<div data-aos="flip-left" class="mt-60 text-center">
-					<img src="../assets/silvertrophy.png" alt="Image 1">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player202</p>
+	<section class="leaderboard-bg p-8 md:p-16 lg:p-32">
+		<div class="leaderboard-card rounded-xl mt-10 h-full lg:h-[1000px]">
+			<img src="../assets/leaderboard.png" alt="image" class="block mx-auto w-[200px] lg:w-[380px] lead-img">
+			<div class="flex flex-row lg:flex-row justify-center items-center">
+				<div class="mt-14 lg:mt-52 text-center lg:w-auto">
+					<img src="../assets/silvertrophy.png" alt="Image 1" class="mx-auto w-24 md:w-36 lg:w-72">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player202</p>
 				</div>
-				<div data-aos="zoom-in" class="mt-36 text-center">
-					<img src="../assets/goldtrophy.png" alt="Image 2">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player201</p>
+				<div class="mt-10 lg:mt-48 text-center lg:w-auto lg:relative lg:bottom-20">
+					<img src="../assets/goldtrophy.png" alt="Image 2" class="mx-auto w-24 md:w-36 lg:w-72">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player201</p>
 				</div>
-				<div data-aos="flip-right" class="mt-60 text-center">
-					<img src="../assets/bronzetrophy.png"  alt="Image 3">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player203</p>
+				<div class="mt-14 lg:mt-52 text-center lg:w-auto">
+					<img src="../assets/bronzetrophy.png" alt="Image 3" class="mx-auto w-24 md:w-36 lg:w-72">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player203</p>
 				</div>
 			</div>
 			<div class="flex justify-center mt-6" style="font-family: Saira Condensed, sans-serif;">
-				<table>
-					<tr>
-						<th class="px-32 py-8 text-white text-2xl font-bold">User</th>
-						<th class="px-32 py-8 text-white text-2xl font-bold">Amount</th>
-						<th class="px-32 py-8 text-white text-2xl font-bold">Price</th>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
+				<table class="w-full lg:w-auto">
+					<thead>
+						<tr>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">User</th>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">Amount</th>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>
 	</section>
 
 	<!-- Stream Section -->
-	<section class="h-[1000px] stream-bg">
-			<div data-aos="flip-left"  class="flex justify-center" style="font-family: Saira Condensed, sans-serif;">
-				<div class="mt-14 text-white text-3xl mb-4 font-bold uppercase">Catch every video on <a :href="channelUrl" target="_blank" rel="noopener noreferrer">@XposedLIVE</a></div>
-			</div>
-			
-			<Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
-				<Slide v-for="video in videos" :key="video">
-					<div data-aos="zoom-in-up" class="carousel__item">
-						<iframe
-							width="1080"
-							height="650"
-							:src="video.embedUrl"
-							frameborder="0"
-							allowfullscreen
-						></iframe>
-					</div>
-				</Slide>
-			</Carousel>
+	<section class="h-auto stream-bg">
+        <div class="flex justify-center" style="font-family: Saira Condensed, sans-serif;">
+            <div class=" mt-8 px-2 lg:px-0 lg:mt-14 text-white text-3xl mb-4 font-bold uppercase">Catch every video on <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="text-red-500">@XposedLIVE</a></div>
+        </div>
 
-			<Carousel class="mt-4" id="thumbnails" :items-to-show="5" :wrap-around="true" v-model="currentSlide" ref="carousel">
-			<Slide v-for="(video, index) in videos" :key="index">
-				<div class="carousel__item" @click="slideTo(index)">
-					<img data-aos="flip-up" src="../assets/dummy.png" class="w-[300px] h-[200px] rounded-md" alt="Thumbnail">
-				</div>
-			</Slide>
-			</Carousel>
-	</section>
+        <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
+            <Slide v-for="video in videos" :key="video">
+                <div data-aos="zoom-in-up" class="carousel__item">
+                    <iframe
+                        width="1080"
+                        height="650"
+                        :src="video.embedUrl"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </Slide>
+        </Carousel>
+
+        <Carousel class="mt-4" id="thumbnails" :items-to-show="6" :wrap-around="true" v-model="currentSlide" ref="carousel">
+            <Slide v-for="(video, index) in videos" :key="index">
+                <div class="carousel__item" @click="slideTo(index)">
+                    <img data-aos="flip-up" src="../assets/dummy.png" class="w-[300px] h-[200px] rounded-md mb-4" alt="Thumbnail">
+                </div>
+            </Slide>
+        </Carousel>
+    </section>
 
 	<!-- Team Section -->
 	<section class="h-screen team-bg relative overflow-hidden">
 		<div class="flex justify-start">
-			<div data-aos="zoom-in" class="text-white text-[60px] lg:text-[80px] font-bold uppercase mt-16 ml-16" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">The Exposed Team</div>
+			<div class="text-white text-[30px] lg:text-[80px] font-bold uppercase mt-16 ml-16" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">The Exposed Team</div>
 		</div>
-		<div class="absolute inset-x-0 bottom-0 -mb-32 flex justify-center items-end opacity-20">
+		<div class="absolute inset-x-0 bottom-0 -mb-14 lg:-mb-32 flex justify-center items-end opacity-20">
 		<img class="h-auto max-w-full" src="../assets/team.png" alt="The Exposed Team">
 		</div>
 	</section>
@@ -183,15 +185,12 @@ export default defineComponent({
 		slideTo(val) {
 			this.currentSlide = val
 		},
-	}
+
+	},
 })
 </script>
 
 <style scope>
-.carousel__item {
-  margin: 0;
-  padding: 0;
-}
 .bg {
 	background: linear-gradient(180deg, rgba(126, 0, 0, 0.86) 14%, rgba(56, 2, 209, 0.86) 98%);
 	background-repeat: no-repeat;
@@ -226,7 +225,7 @@ export default defineComponent({
 
 .leaderboard-card .lead-img {
 	position: absolute;
-	top: -80px;
+	top: -50px;
 	left: 50.5%;
 	transform: translateX(-50%);
 }
@@ -237,5 +236,57 @@ export default defineComponent({
 
 .team-bg {
 	background: linear-gradient(180deg, rgba(126, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.86) 100%);
+}
+.carousel__item iframe {
+	width: 1080px;
+	height: auto;
+}
+
+.carousel__item img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.text-3xl {
+		font-size: 1.5rem; /* Adjust font size for smaller screens */
+	}
+
+	.carousel__item iframe {
+		width: 310px;
+		height: 300px; /* Adjust iframe height for smaller screens */
+	}
+
+	.carousel__item img {
+		width: 100px;
+		height: 80px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.text-3xl {
+		font-size: 2rem; /* Adjust font size for tablets */
+	}
+
+	.carousel__item iframe {
+		height: 450px; /* Adjust iframe height for tablets */
+	}
+
+	.carousel__item img {
+		width: 200px;
+		height: 150px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.carousel__item iframe {
+		width: 1080px;
+		height: 650px; /* Maintain the original height for desktops */
+	}
+
+	.carousel__item img {
+		width: 300px;
+		height: 200px;
+	}
 }
 </style>

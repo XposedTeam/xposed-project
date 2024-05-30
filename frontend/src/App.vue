@@ -27,4 +27,24 @@ export default {
 
 <style>
 
+@keyframes fadeIn {
+    0%{
+       opacity: 0;
+       transform: translateZ(0);
+    }
+    100%{
+       opacity: 1;
+       transform: translateZ(100%)
+    }
+}
+
+.checkFade {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated{
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
 </style>

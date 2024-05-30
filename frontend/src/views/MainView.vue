@@ -1,6 +1,6 @@
 <template>
 	<!-- Main section start -->
-	<main-section></main-section>
+		<main-section></main-section>
 	<!-- Main section end -->
 </template>
 

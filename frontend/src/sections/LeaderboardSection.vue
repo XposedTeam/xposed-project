@@ -1,11 +1,13 @@
 <template>
     <section class="h-screen main-bg">
 		<div class="h-screen px-5 lg:px-20 py-16 lg:py-28 page-bg">
-			<div class="w-full h-full">
-				<div data-aos="flip-up" class="grid grid-cols-2">
-					<div class="text-white text-[60px] lg:text-[130px] font-bold uppercase mt-24 md:w-1/2" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">Leaderboard</div>
-					<div>
-						<img src="../assets/xposedlogo2.png" class="w-80 ml-80 mt-8 md:w-1/2" alt="">
+			<div class="w-full h-full checkFade animated">
+				<div class="grid grid-cols-1 md:grid-cols-2 md:px-0">
+					<div class="text-white text-[55px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
+						Leaderboard
+					</div>
+					<div data-aos="fade">
+						<img src="../assets/xposedlogo2.png" class="w-80 lg:ml-80 mt-8 md:w-1/2" alt="logo">
 					</div>
 				</div>
 			</div>
@@ -13,60 +15,64 @@
 	</section>
 
     <!-- Leaderboard Section -->
-	<section class="h-[1300px] leaderboard-bg p-32">
-		<div data-aos="zoom-in-down" class="h-[1000px] leaderboard-card rounded-xl mt-10">
-			<img src="../assets/leaderboard.png" alt="image" class="block mx-auto w-[500px] lead-img">
-			<div class="flex flex-row justify-center">
-				<div data-aos="flip-left" class="mt-60 text-center">
-					<img src="../assets/silvertrophy.png" alt="Image 1">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player202</p>
+	<section class="leaderboard-bg p-8 md:p-16 lg:p-32">
+		<div class="leaderboard-card rounded-xl mt-10 h-full lg:h-[1000px]">
+			<img src="../assets/leaderboard.png" alt="image" class="block mx-auto w-[200px] lg:w-[380px] lead-img">
+			<div class="flex flex-row lg:flex-row justify-center items-center">
+				<div class="mt-14 lg:mt-52 text-center lg:w-auto lg:px-4">
+					<img src="../assets/silvertrophy.png" alt="Image 1" class="mx-auto w-24 md:w-36 lg:w-48">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player202</p>
 				</div>
-				<div data-aos="zoom-in" class="mt-36 text-center">
-					<img src="../assets/goldtrophy.png" alt="Image 2">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player201</p>
+				<div class="mt-10 lg:mt-48 text-center lg:w-auto lg:px-4 lg:relative lg:bottom-20">
+					<img src="../assets/goldtrophy.png" alt="Image 2" class="mx-auto w-24 md:w-36 lg:w-48">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player201</p>
 				</div>
-				<div data-aos="flip-right" class="mt-60 text-center">
-					<img src="../assets/bronzetrophy.png"  alt="Image 3">
-					<p class="text-white text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player203</p>
+				<div class="mt-14 lg:mt-52 text-center lg:w-auto lg:px-4">
+					<img src="../assets/bronzetrophy.png" alt="Image 3" class="mx-auto w-24 md:w-36 lg:w-48">
+					<p class="text-white text-xl md:text-3xl font-bold" style="font-family: Saira Condensed, sans-serif;">#Player203</p>
 				</div>
 			</div>
 			<div class="flex justify-center mt-6" style="font-family: Saira Condensed, sans-serif;">
-				<table>
-					<tr>
-						<th class="px-32 py-8 text-white text-2xl font-bold">User</th>
-						<th class="px-32 py-8 text-white text-2xl font-bold">Amount</th>
-						<th class="px-32 py-8 text-white text-2xl font-bold">Price</th>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
-					<tr>
-						<td class="px-32 py-3 text-white font-semibold">ski*******</td>
-						<td class="px-32 py-3 text-white font-semibold">$ 1,706,033</td>
-						<td class="px-32 py-3 text-red-600 font-semibold">$ 15,000</td>
-					</tr>
+				<table class="w-full lg:w-auto">
+					<thead>
+						<tr>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">User</th>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">Amount</th>
+							<th class="px-2 md:px-8 lg:px-32 py-2 md:py-8 text-white text-base md:text-2xl font-bold">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+						<tr>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>
