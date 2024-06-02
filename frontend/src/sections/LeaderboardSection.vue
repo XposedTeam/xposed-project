@@ -98,7 +98,7 @@
 }
 
 .leaderboard-card {
-	background: linear-gradient(180deg, rgba(153, 0, 0, 0.86) 50%, rgba(0, 0, 0, 0.86) 80%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 50%, rgba(153, 0, 0, 0.86) 80%);
 	position: relative;
 }
 

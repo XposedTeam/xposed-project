@@ -138,10 +138,10 @@
             </Slide>
         </Carousel>
 
-        <Carousel class="mt-4" id="thumbnails" :items-to-show="6" :wrap-around="true" v-model="currentSlide" ref="carousel">
+        <Carousel class="mt-4" id="thumbnails" :items-to-show="5" :wrap-around="true" v-model="currentSlide" ref="carousel">
             <Slide v-for="(video, index) in videos" :key="index">
                 <div class="carousel__item" @click="slideTo(index)">
-                    <img data-aos="flip-up" src="../assets/dummy.png" class="w-[300px] h-[200px] rounded-md mb-4" alt="Thumbnail">
+                    <img :src="video.thumbnails" class="rounded-2xl mb-4 px-2" alt="Thumbnail">
                 </div>
             </Slide>
         </Carousel>
@@ -173,11 +173,11 @@ export default defineComponent({
 			currentSlide: 0,
 			channelUrl: "https://www.youtube.com/@XposedLIVE",
 			videos: [
-				{ embedUrl: "https://www.youtube.com/embed/DQGJ7Lvas30" },
-				{ embedUrl: "https://www.youtube.com/embed/1XizP7Y4tK0" },
-				{ embedUrl: "https://www.youtube.com/embed/YB_cQ74IC5s" },
-				{ embedUrl: "https://www.youtube.com/embed/mgXyciKAKEg" },
-				{ embedUrl: "https://www.youtube.com/embed/FTOiSsG860o" },
+				{ embedUrl: "https://www.youtube.com/embed/DQGJ7Lvas30", thumbnails: require("../assets/thumbnails/DealorNoDeal.png") },
+				{ embedUrl: "https://www.youtube.com/embed/1XizP7Y4tK0", thumbnails: require("../assets/thumbnails/ViewerBuyBattle.png") },
+				{ embedUrl: "https://www.youtube.com/embed/YB_cQ74IC5s", thumbnails: require("../assets/thumbnails/ViewerSlot.png") },
+				{ embedUrl: "https://www.youtube.com/embed/mgXyciKAKEg", thumbnails: require("../assets/thumbnails/BlackJack.png") },
+				{ embedUrl: "https://www.youtube.com/embed/FTOiSsG860o", thumbnails: require("../assets/thumbnails/Rolex.png") },
 			]
 		};
 	},
@@ -258,7 +258,7 @@ export default defineComponent({
 	}
 
 	.carousel__item img {
-		width: 100px;
+		width: 400px;
 		height: 80px;
 	}
 }
@@ -273,7 +273,7 @@ export default defineComponent({
 	}
 
 	.carousel__item img {
-		width: 200px;
+		width: 400px;
 		height: 150px;
 	}
 }
@@ -285,8 +285,8 @@ export default defineComponent({
 	}
 
 	.carousel__item img {
-		width: 300px;
-		height: 200px;
+		width: 400px;
+		height: 180px;
 	}
 }
 </style>
