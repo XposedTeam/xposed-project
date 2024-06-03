@@ -42,9 +42,12 @@
                 <router-link @click="showMenu = false" to="/tournament" role="menuitem" class="px-4 py-2 routerBtn">
                     Tournament
                 </router-link>
-                <router-link @click="showMenu = false" to="/login" role="menuitem" class="px-4 py-2 routerBtn">
-                    Login
+                <router-link v-if="user && user.access_token" @click="showMenu = false" to="/profile" role="menuitem" class="px-4 py-2 routerBtn">
+                    Profile
                 </router-link>
+                <button v-else @click="handleLogin" role="menuitem" class="px-4 py-2 routerBtn uppercase text-left">
+                    Login
+                </button>
             </div>
         </div>
         <!-- Menu content end -->
@@ -53,12 +56,17 @@
 </template>
 
 <script>
+import {v4 as uuidv4} from 'uuid'
+import {mapState} from 'vuex'
 
 export default {
+    computed: mapState({
+        user: state => state.user
+    }),
     data() {
         return {
             isScrolled: false,
-            showMenu: false
+            showMenu: false,
         };
     },
     methods: {
@@ -75,8 +83,18 @@ export default {
                 this.isScrolled = true;
             }
 		},
+        handleLogin() {
+            const redirectUri = encodeURIComponent(`${process.env.VUE_APP_AUTH_REDIRECT_URL}`)
+            const scope = process.env.VUE_APP_TWITCH_SCOPE
+            const state = uuidv4().split('-').join('')
+            const loginUrl = `${process.env.VUE_APP_TWITCH_AUTH_URL}?client_id=${process.env.VUE_APP_TWITCH_CLIENT_ID}&redirect_uri=${redirectUri}&scope=${scope}&state=${state}&response_type=code`
+
+            this.showMenu = false
+            window.location.href = loginUrl
+        }
     },
     mounted() {
+        console.log("USER: ", this.isUserLogin)
         window.addEventListener('scroll', this.handleScroll);
     },
     beforeUnmount() {

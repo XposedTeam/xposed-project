@@ -8,6 +8,7 @@ import SurvivorView from '../views/SurvivorView.vue'
 import VIPSpinsView from '../views/VIPSpinsView.vue'
 import TournamentView from '../views/TournamentView.vue'
 import LoginView from '../views/LoginView.vue'
+import ProfileView from '../views/ProfileView.vue'
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: ProfileView
   },
 ]
 
