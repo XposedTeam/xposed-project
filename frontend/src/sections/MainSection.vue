@@ -160,6 +160,7 @@
 
 <script>
 import { defineComponent } from 'vue'
+import { mapState } from 'vuex'
 import { Carousel, Slide} from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
@@ -168,6 +169,9 @@ export default defineComponent({
 		Carousel,
 		Slide
 	},
+	computed: mapState({
+		user: state => state.user
+	}),
 	data() {
 		return {
 			currentSlide: 0,
@@ -187,6 +191,9 @@ export default defineComponent({
 		},
 
 	},
+	mounted() {
+		console.log(this.user)
+	}
 })
 </script>
 
