@@ -1,6 +1,6 @@
 <template>
     <!-- Navbar start -->
-    <nav :class="{ 'bg-black shadow-md transition-opacity': isScrolled, 'bg-transparent': !isScrolled }" class="w-screen fixed p-4 lg:px-10 flex justify-between z-50 transition-all">
+    <nav :class="{ 'bg-black shadow-md transition-opacity': isScrolled, 'bg-transparent': !isScrolled }" class="w-full fixed p-4 lg:px-10 flex justify-between z-50 transition-all">
         <!-- Logo start -->
 		
 		<a href="/">
@@ -18,7 +18,7 @@
         <!-- Toggler end -->
 
         <!-- Menu content start -->
-        <div :class="{ 'bg-opacity-90': isScrolled, 'bg-opacity-0': !isScrolled, 'hidden': !showMenu, 'flex': showMenu }" class="absolute left-0 right-0 translate-y-24 bg-black md:bg-none md:bg-opacity-0 shadow sm:hidden md:hidden lg:flex flex-col gap-4 items-start lg:item-center lg:mt-4 p-4 md:flex-row md:static md:shadow-none md:translate-y-0" role="menu" :aria-expanded="showMenu.toString()">
+        <div :class="{ 'bg-opacity-90': isScrolled, 'bg-opacity-0': !isScrolled, 'hidden': !showMenu, 'flex': showMenu }" class="absolute left-0 right-0 translate-y-24 bg-black md:bg-none md:bg-opacity-0 shadow sm:hidden lg:flex flex-col gap-4 items-start lg:item-center lg:mt-4 p-4 md:flex-row md:static md:shadow-none md:translate-y-0" role="menu" :aria-expanded="showMenu.toString()">
             <!-- Links start -->
             <div class="flex flex-col gap-[35px] lg:flex-row justify-evenly uppercase whitespace-nowrap text-lg text-white" style="font-family: Saira Condensed, sans-serif; font-weight: 700; line-height: 17.6px">
                 <router-link @click="showMenu = false" to="/leaderboard" role="menuitem" class="px-4 py-2 routerBtn">

@@ -3,7 +3,7 @@
 		<div class="h-screen px-5 lg:px-20 py-16 lg:py-28 page-bg">
 			<div class="w-full h-full checkFade animated">
 				<div class="grid grid-cols-1 md:grid-cols-2 md:px-0">
-					<div class="text-white text-[70px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
+					<div class="text-white text-[55px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
 						Tournament
 					</div>
 					<div data-aos="fade">

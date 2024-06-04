@@ -3,47 +3,48 @@
 	<section class="h-screen bg">
 		<div class="h-screen px-5 lg:px-20 py-16 lg:py-28 page-bg">
 			<div class="w-full h-full checkFade animated">
-				<div class="grid grid-cols-1 md:grid-cols-2 md:px-0">
-					<div class="text-white text-[70px] lg:text-[120px] font-bold uppercase mt-24 md:px-0 md:mt-16 md:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
+				<div class="grid grid-cols-1 lg:grid-cols-2 md:px-0">
+					<div class="text-white text-[70px] md:text-[100px] lg:text-[120px] font-bold uppercase mt-24 md:ml-6 lg:ml-0 lg:px-0 lg:mt-16 lg:w-[1000px]" style="font-family: Stick No Bills, sans-serif; line-height: 0.8; max-width: 20ch;">
 						Welcome to Xposed Unofficial
 					</div>
 					<div data-aos="fade">
-						<img src="../assets/xposedlogo2.png" class="w-80 lg:ml-80 mt-8 md:w-1/2" alt="logo">
+						<img src="../assets/xposedlogo2.png" class="w-80 lg:ml-80 mt-8 md:ml-4 md:w-[90%] lg:w-1/2" alt="logo">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- About Section -->
-	<section class="h-[1700px] about-bg">
-		<div class="flex gap-8 flex-col md:flex-row items-center">
-            <h1 class="mt-8 md:mt-32 md:ml-32">
-                <img src="../assets/dice.png" class="w-[300px] md:min-w-[600px]" alt="">
+	<section class="h-[1700px] md:h-[2200px] lg:h-[1700px] about-bg">
+		<div class="flex gap-8 flex-col lg:flex-row items-center">
+            <h1 class="mt-8 lg:mt-32 lg:ml-32">
+                <img src="../assets/dice.png" class="w-[300px] md:w-[700px] lg:min-w-[600px]" alt="">
             </h1>
-            <p class="md:mt-32 text-white px-10 md:px-0 text-3xl md:text-5xl font-bold md:mr-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
+            <p class="lg:mt-32 lg:mr-32  text-white px-10 md:px-16 lg:px-0 text-3xl md:text-5xl font-bold uppercase " style="font-family: Saira Condensed, sans-serif;">
                 if you plan to gamble money you can afford to lose, go to roobet.com/xposed
             </p>
         </div>
-		<div class="flex gap-8 flex-col md:flex-row items-center">
+		<div class="flex gap-8 flex-col lg:flex-row items-center">
 			<div>
-				<p class="text-white px-10 md:px-0 text-3xl mt-8 md:text-5xl font-bold md:ml-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white px-10 lg:px-0 md:px-16 text-3xl mt-8 lg:text-5xl font-bold lg:ml-32 uppercase " style="font-family: Saira Condensed, sans-serif;">
 					Where High Stakes Meet High Entertainment
 				</p>
-				<p class="text-white px-10 md:px-0 text-lg font-light md:ml-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white px-10 md:px-16 lg:px-0 text-lg font-light lg:ml-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum doloribus unde labore, 
 					minus accusamus facere, sapiente necessitatibus mollitia et tenetur velit ut esse corporis ullam tempore asperiores in vitae?
 				</p>
 			</div>
-            <h1 class="mt-1 md:mt-8 md:mr-32">
-                <img src="../assets/table.png" class="w-[300px] md:min-w-[600px]" alt="">
+            <h1 class="mt-1 lg:mt-8 lg:mr-32">
+                <img src="../assets/table.png" class="w-[300px] md:w-[700px] lg:min-w-[600px]" alt="">
             </h1>
         </div>
-		<div class="flex gap-8 flex-col md:flex-row items-center">
-            <h1 class="mt-6 md:mt-8 md:ml-32">
-                <img src="../assets/dice.png" class="w-[300px] md:min-w-[600px]" alt="">
+
+		<div class="flex gap-8 flex-col lg:flex-row items-center">
+            <h1 class="mt-6 lg:mt-8 lg:ml-32">
+                <img src="../assets/dice.png" class="w-[300px] md:w-[700px] md:min-w-[600px]" alt="">
             </h1>
 			<div>
-				<p class="text-white text-lg px-10 md:px-0 font-light md:mr-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
+				<p class="text-white text-lg md:px-16 px-10 lg:px-0 font-light lg:mr-32 mt-2" style="font-family: Saira Condensed, sans-serif;">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet, 
 					recusandae ad iste quam hic porro officiis unde accusantium ipsum, ullam, quidem quod. 
 					Fugiat neque non facilis veniam. Quisquam, nisi qui rerum modi asperiores voluptatem sint, 
@@ -53,6 +54,10 @@
 			</div>
         </div>
 	</section>
+
+	<div class="absolute -mt-[400px] w-[380px] md:-mt-[700px] md:w-[850px] lg:w-full lg:-mt-[1000px] lg:ml-32 -z-20">
+		<img src="../assets/tokens.png" alt="token">
+	</div>
 
 	<!-- Leaderboard Section -->
 	<section class="leaderboard-bg p-8 md:p-16 lg:p-32">
@@ -83,34 +88,34 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 						<tr>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
-							<td class="px-2 md:px-8 lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">ski*******</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-white font-semibold">$ 1,706,033</td>
+							<td class="px-2 md:px-[85px] lg:px-32 py-2 md:py-3 text-red-600 font-semibold">$ 15,000</td>
 						</tr>
 					</tbody>
 				</table>
@@ -148,11 +153,11 @@
     </section>
 
 	<!-- Team Section -->
-	<section class="h-screen team-bg relative overflow-hidden">
+	<section class="h-screen md:h-[700px] lg:h-screen team-bg relative overflow-hidden">
 		<div class="flex justify-start">
-			<div class="text-white text-[30px] lg:text-[80px] font-bold uppercase mt-16 ml-16" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">The Exposed Team</div>
+			<div class="text-white text-[30px] md:text-[60px] lg:text-[80px] font-bold uppercase mt-16 ml-16" style="font-family: Stick No Bills, sans-serif; line-height: 0.8;">The Exposed Team</div>
 		</div>
-		<div class="absolute inset-x-0 bottom-0 -mb-14 lg:-mb-32 flex justify-center items-end opacity-20">
+		<div class="absolute inset-x-0 bottom-0 -mb-14 md:-mb-20 lg:-mb-32 flex justify-center items-end opacity-20">
 		<img class="h-auto max-w-full" src="../assets/team.png" alt="The Exposed Team">
 		</div>
 	</section>
@@ -209,6 +214,13 @@ export default defineComponent({
 	background-image: url('../assets/mainsection.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	left:0;right:0;bottom:0;
+}
+
+.token-bg {
+	background-image: url('../assets/tokens.png');
+	background-size: cover;
+	width: 100%;
 	left:0;right:0;bottom:0;
 }
 
@@ -276,12 +288,13 @@ export default defineComponent({
 	}
 
 	.carousel__item iframe {
-		height: 450px; /* Adjust iframe height for tablets */
+		width: 720px;
+		height: 650px; /* Adjust iframe height for tablets */
 	}
 
 	.carousel__item img {
-		width: 400px;
-		height: 150px;
+		width: 500px;
+		height: 100px;
 	}
 }
 
