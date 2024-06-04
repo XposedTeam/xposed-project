@@ -1,6 +1,6 @@
 <template>
     <!-- Footer start -->
-    <div class="bg-black w-full flex justify-center items-center md:justify-between md:px-32 flex-col md:flex-row gap-8 p-8">
+    <div class="bg-black w-full flex justify-center items-center md:justify-between lg:px-32 flex-col md:flex-row gap-8 p-8">
         <!-- Overview start -->
         <div class="text-left md:w-[45%]">
             <p class="tracking-widest font-semibold uppercase text-white text-lg" style="font-family: Saira Condensed, sans-serif;">If you ever feel that gambling is becoming a <span class="text-red-700">problem</span>,</p>
